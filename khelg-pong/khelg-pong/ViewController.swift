@@ -23,16 +23,16 @@ class ViewController: UIViewController, NetworkControllerDelegate {
     
     @IBAction func disconnect(sender: UIButton) {
         println("Attempting to disconnect")
-        self.netController?.disconnect()
+//        self.netController?.disconnect()
     }
     
     @IBAction func sendMessage(sender: UIButton) {
         println("Attempting to send message")
-        self.netController?.sendMessage(self.inputField.text)
+//        self.netController?.sendMessage(self.inputField.text)
     }
     
     @IBAction func connectionStatus(sender: UIButton) {
-        println("Is connected: \(self.netController?.isConnected)")
+//        println("Is connected: \(self.netController?.isConnected)")
     }
     
     // MARK: NetworkControllerDelegate

@@ -1,6 +1,7 @@
 platform :ios, "8.0"
 
 #pod "SocketRocket", :git => 'https://github.com/square/SocketRocket.git', :commit => 'a2dd92a13b42e14fee0c93253e464121c1de67d5'
-pod "Starscream", :git => "https://github.com/daltoniam/starscream.git", :tag => "0.9.2"
+#pod "Starscream", :git => "https://github.com/daltoniam/starscream.git", :tag => "0.9.2"
+pod 'SIOSocket', '~> 0.2.0'
 
 link_with 'khelg-pong', 'khelg-pongTests'
