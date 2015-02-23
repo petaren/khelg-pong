@@ -6,9 +6,9 @@
 // project.
 
 
-// SocketRocket
-#define COCOAPODS_POD_AVAILABLE_SocketRocket
-#define COCOAPODS_VERSION_MAJOR_SocketRocket 0
-#define COCOAPODS_VERSION_MINOR_SocketRocket 2
-#define COCOAPODS_VERSION_PATCH_SocketRocket 0
+// Starscream
+#define COCOAPODS_POD_AVAILABLE_Starscream
+#define COCOAPODS_VERSION_MAJOR_Starscream 0
+#define COCOAPODS_VERSION_MINOR_Starscream 9
+#define COCOAPODS_VERSION_PATCH_Starscream 2
 
