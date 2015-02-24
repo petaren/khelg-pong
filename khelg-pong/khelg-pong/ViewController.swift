@@ -33,6 +33,12 @@ class ViewController: UIViewController, NetworkControllerDelegate {
         println("Attempting to send message")
         self.netController?.sendMessage(self.inputField.text)
     }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "pong game" {
+            let pongVC = segue.destinationViewController as PongViewController
+        }
+    }
     
     // MARK: NetworkControllerDelegate
     
@@ -50,9 +56,14 @@ class ViewController: UIViewController, NetworkControllerDelegate {
 
     func playerConnected(networkController: NetworkController, players: (player1: String, player2: String?)) {
         self.eventsTextView.text = self.eventsTextView.text + "\nPlayers connected:\n  Player1: \(players.player1)"
+
         if let p2 = players.player2 {
             self.eventsTextView.text = self.eventsTextView.text + "\n  Player2: \(players.player2)"
+            self.navigationItem.rightBarButtonItem?.enabled = true
+        } else {
+            self.navigationItem.rightBarButtonItem?.enabled = false
         }
+
     }
     
 }

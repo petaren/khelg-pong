@@ -10,4 +10,10 @@ import UIKit
 
 class PongViewController: UIViewController {
 
+    @IBOutlet weak var remotePlayerPaddleY: NSLayoutConstraint!
+    @IBOutlet weak var localPlayerPaddleY: NSLayoutConstraint!
+    @IBOutlet weak var ballY: NSLayoutConstraint!
+    @IBOutlet weak var ballX: NSLayoutConstraint!
+
+    var networkController: NetworkController?
 }
